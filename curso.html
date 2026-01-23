@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guía: Ser un Hombre de Verdad | Don Fer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Playfair+Display:ital,wght@0,400;1,700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <style>
+        :root {
+            --oro: #D4AF37;
+            --negro-elite: #0a0a0a;
+            --blanco: #ffffff;
+            --gris-testimonio: #f8f8f8;
+        }
+
+        body { margin: 0; background-color: var(--blanco); color: var(--negro-elite); font-family: 'Poppins', sans-serif; }
+        
+        .scarcity-bar {
+            background: var(--negro-elite);
+            color: var(--oro);
+            padding: 12px;
+            text-align: center;
+            font-size: 0.8rem;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        header { padding: 50px 20px; text-align: center; }
+        h1 { font-family: 'Cinzel', serif; font-size: 2.5rem; margin-bottom: 5px; }
+        .guia-titulo { color: var(--oro); font-weight: bold; letter-spacing: 3px; }
+
+        /* SECCIÓN CONSEJO */
+        .consejo-box {
+            background: #fffdf5;
+            border: 2px solid var(--oro);
+            padding: 40px;
+            max-width: 800px;
+            margin: 40px auto;
+            position: relative;
+        }
+
+        .consejo-box h2 { font-family: 'Cinzel'; color: var(--negro-elite); margin-top: 0; }
+        .quote { font-family: 'Playfair Display', serif; font-size: 1.4rem; font-style: italic; color: #333; }
+
+        /* TESTIMONIOS */
+        .testimonios-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 40px 10%;
+            background: var(--gris-testimonio);
+        }
+
+        .testimonio-card {
+            background: white;
+            padding: 25px;
+            border-radius: 5px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            text-align: left;
+        }
+
+        .testimonio-card p { font-style: italic; font-size: 0.9rem; }
+        .testimonio-card .autor { font-weight: bold; color: var(--oro); margin-top: 15px; display: block; }
+
+        /* PRECIOS */
+        .pricing { display: flex; justify-content: center; gap: 30px; padding: 50px 20px; flex-wrap: wrap; }
+        .card { border: 1px solid #ddd; padding: 30px; width: 280px; text-align: center; }
+        .featured { border: 2px solid var(--oro); box-shadow: 0 10px 30px rgba(0,0,0,0.1); }
+        .price { font-size: 3rem; font-weight: bold; }
+
+        .payment-icons { margin-top: 15px; font-size: 1.5rem; color: #555; }
+        .btn-buy {
+            display: block; background: var(--negro-elite); color: white;
+            padding: 15px; text-decoration: none; font-weight: bold; margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="scarcity-bar">Cupos limitados para el Curso Plus - Inscripciones abiertas</div>
+
+    <header>
+        <span class="guia-titulo">GUÍA EXCLUSIVA</span>
+        <h1>SER UN HOMBRE DE VERDAD</h1>
+        <p>Aprende lo que el sistema no quiso enseñarte.</p>
+    </header>
+
+    <main>
+        <section class="consejo-box">
+            <h2>CONSEJO #1: LA REGLA DEL ÉXITO</h2>
+            <p class="quote">
+                "En la escuela te dijeron que estaba prohibido copiar, pero en la vida real 
+                <strong>está permitido copiar para triunfar</strong>. Si quieres superar a la competencia, 
+                identifica al mejor, replica su disciplina y luego supéralo. No reinventes la rueda, 
+                haz que ruede más rápido que nadie."
+            </p>
+            <p style="text-align: right; font-weight: bold;">— Don Fer</p>
+        </section>
+
+        <section style="text-align: center; padding: 40px;">
+            <h3>Descarga la Guía Completa en tu Email</h3>
+            <form action="TU_URL_DE_MOOSEND_AQUÍ" method="post" style="max-width: 400px; margin: auto;">
+                <input type="email" name="ms-email" placeholder="Tu correo electrónico" required style="width: 100%; padding: 10px; margin-bottom: 10px;">
+                <button type="submit" style="width: 100%; padding: 10px; background: var(--oro); border: none; color: white; font-weight: bold; cursor: pointer;">ENVIARME LA GUÍA</button>
+            </form>
+        </section>
+
+        <h2 style="text-align: center; font-family: 'Cinzel';">LO QUE DICEN LOS HOMBRES DE ACCIÓN</h2>
+        <section class="testimonios-container">
+            <div class="testimonio-card">
+                <p>"Don Fer no solo arregló mi Specialized S-Works, me enseñó que la disciplina en el taller se traduce en éxito en los negocios. Un mentor total."</p>
+                <span class="autor">— Carlos Mendoza (CDMX)</span>
+            </div>
+            <div class="testimonio-card">
+                <p>"I've been to mechanics in the UK and USA, but Don Fer's technical knowledge is next level. His 'Plus' course changed how I maintain my fleet."</p>
+                <span class="autor">— James Harrison (Texas, EUA)</span>
+            </div>
+            <div class="testimonio-card">
+                <p>"La escuela 'El padre que nunca tuve' me dio las herramientas técnicas y el carácter que me hacían falta. El precio es una inversión mínima para el valor que recibes."</p>
+                <span class="autor">— Roberto Silva (Monterrey)</span>
+            </div>
+        </section>
+
+        <section class="pricing">
+            <div class="card">
+                <h3>MEMBRESÍA BASIC</h3>
+                <div class="price">1$ <small style="font-size: 12px;">/semana</small></div>
+                <p>Acceso a la comunidad y tips semanales de mecánica.</p>
+                <a href="https://wa.me/529631466941?text=Quiero%20el%20plan%20Basic%20de%201%20dolar" class="btn-buy">ELEGIR BASIC</a>
+            </div>
+
+            <div class="card featured">
+                <h3 style="color: var(--oro);">MEMBRESÍA PLUS</h3>
+                <div class="price">3$ <small style="font-size: 12px;">/semana</small></div>
+                <p>Mentoría directa, cursos de alta gama y secretos de EUA.</p>
+                <a href="https://wa.me/529631466941?text=Quiero%20el%20plan%20Plus%20de%203%20dolares" class="btn-buy" style="background: var(--oro);">ELEGIR PLUS</a>
+                
+                <div class="payment-icons">
+                    <i class="fab fa-cc-visa"></i>
+                    <i class="fab fa-cc-mastercard"></i>
+                    <i class="fab fa-cc-paypal"></i>
+                    <span style="font-size: 12px; display: block; font-weight: bold;">Mercado Pago</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer style="text-align: center; padding: 40px; font-size: 0.8rem;">
+        &copy; 2024 Fernando Zapoteco | El Padre Que Nunca Tuve.
+    </footer>
+
+</body>
+</html>
