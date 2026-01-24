@@ -449,44 +449,62 @@
                 color: #333;
             }
 
-            /* Media Queries para Responsividad */
+            /* --- OPTIMIZACIÓN MÓVIL (Añadir al final del <style>) --- */
             @media (max-width: 768px) {
-                header {
-                    min-height: 80vh;
-                    padding: 60px 15px;
+                /* Reducimos el tamaño del contador para que no ocupe 2 líneas */
+                .top-bar {
+                    font-size: 0.7rem;
+                    padding: 8px 5px;
                 }
+
+                /* Títulos que se ajustan al ancho sin romperse */
                 h1 {
-                    font-size: clamp(2rem, 8vw, 3.5rem);
+                    font-size: 2.2rem !important;
+                    padding: 0 10px;
                 }
-                .sub-gold {
-                    font-size: clamp(0.8rem, 3vw, 1rem);
-                    letter-spacing: 4px;
-                }
-                .filosofia {
-                    padding: 80px 15px;
-                }
+
+                /* El consejo (Quote) con menos padding para ganar espacio */
                 .quote-box {
-                    font-size: clamp(1.2rem, 4vw, 1.8rem);
-                    padding-left: 20px;
+                    font-size: 1.2rem !important;
+                    padding-left: 15px;
+                    margin: 0 10px;
                 }
-                .beneficios,
-                .testimonios-grid,
-                .pricing-section {
-                    padding: 50px 5%;
+
+                /* Las tarjetas de beneficios ahora se apilan una sobre otra */
+                .beneficios {
+                    padding: 40px 5%;
+                    gap: 20px;
                 }
-                .b-card,
-                .t-card,
+
+                /* Las tablas de precio: les quitamos el ancho fijo (380px)
+                   para que usen el 100% del ancho del celular */
                 .price-card {
-                    margin-bottom: 20px;
+                    width: 100% !important;
+                    max-width: 400px;
+                    margin: 0 auto;
+                    padding: 40px 20px;
                 }
+
+                /* El plan destacado (Plus) no debe escalarse tanto en móvil
+                   porque puede chocar con los bordes de la pantalla */
+                .price-card.featured {
+                    transform: scale(1);
+                    margin-top: 30px;
+                }
+
+                /* Ajuste del formulario de Moosend para que el botón
+                   quede debajo del input en pantallas muy pequeñas */
                 .form-moosend {
                     flex-direction: column;
-                    align-items: stretch;
                 }
-                .form-moosend input,
-                .form-moosend button {
+
+                .form-moosend input {
                     width: 100%;
                     min-width: unset;
+                }
+
+                .form-moosend button {
+                    width: 100%;
                 }
             }
         </style>
@@ -708,7 +726,7 @@
                     data-aos-delay="200"
                     data-aos-once="true"
                 >
-                    <div class="tag">¡MÁS BUSCADO!</div>
+                    <div class="tag">.</div>
                     <h2>ELITE PLUS</h2>
                     <div class="amount">3$ <span>/sem</span></div>
                     <ul class="list-benefits">
