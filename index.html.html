@@ -1,0 +1,344 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <title>
+            En la escuela te prohibieron copiar, pero en la vida real para ser
+            el mejor está permitido
+        </title>
+        <meta
+            name="description"
+            content="Fernando Zapoteco Gordillo: El Padre Que Nunca Tuve. Formación de carácter y maestría en alta gama."
+        />
+
+        <link
+            rel="icon"
+            type="image/png"
+            href="https://fernandozapoteco.com/z.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            href="https://fernandozapoteco.com/z.png"
+        />
+        <meta
+            property="og:image"
+            content="https://fernandozapoteco.com/z.png"
+        />
+        <meta property="og:title" content="Fernando Zapoteco Gordillo" />
+
+        <link
+            href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;900&family=Playfair+Display:ital,wght@0,700;1,400&family=Poppins:wght@300;400;600&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        />
+
+        <style>
+            :root {
+                --oro: #d4af37;
+                --negro: #000000;
+                --blanco: #ffffff;
+            }
+
+            * {
+                box-sizing: border-box;
+                scroll-behavior: smooth;
+            }
+            body {
+                margin: 0;
+                font-family: "Poppins", sans-serif;
+                background: var(--blanco);
+                color: var(--negro);
+            }
+
+            /* --- Animación de Entrada --- */
+            @keyframes revealUp {
+                from {
+                    opacity: 0;
+                    transform: translateY(30px);
+                }
+                to {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+            .animar {
+                animation: revealUp 1s ease-out forwards;
+            }
+
+            /* --- Navegación Minimalista --- */
+            header {
+                padding: 30px 10%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                border-bottom: 1px solid #f2f2f2;
+            }
+            .brand {
+                font-family: "Cinzel";
+                font-weight: 900;
+                letter-spacing: 4px;
+                font-size: 1.2rem;
+            }
+            .brand span {
+                color: var(--oro);
+            }
+
+            /* --- Sección Fernando Zapoteco --- */
+            .hero-fer {
+                padding: 80px 10%;
+                display: flex;
+                align-items: center;
+                gap: 60px;
+                flex-wrap: wrap;
+            }
+            .perfil-foto {
+                flex: 1;
+                min-width: 300px;
+                text-align: center;
+            }
+            .perfil-foto img {
+                width: 100%;
+                max-width: 380px;
+                border: 1px solid var(--oro);
+                padding: 10px;
+                box-shadow: 25px 25px 0px -5px var(--oro);
+                transition: 0.5s ease;
+            }
+            .perfil-foto img:hover {
+                transform: translate(10px, 10px);
+                box-shadow: 10px 10px 0px -5px var(--oro);
+            }
+
+            .perfil-info {
+                flex: 1.5;
+                min-width: 300px;
+            }
+            .perfil-info h1 {
+                font-family: "Cinzel";
+                font-size: 3.5rem;
+                margin: 0;
+                line-height: 1;
+            }
+            .perfil-info .slogan-prohibido {
+                font-family: "Playfair Display";
+                color: var(--oro);
+                font-size: 1.5rem;
+                margin: 20px 0;
+                font-style: italic;
+            }
+
+            /* --- Recuadros de Oro Estilo Diploma --- */
+            .caja-oro {
+                border: 2px solid var(--oro);
+                margin: 60px 10%;
+                padding: 80px 40px;
+                text-align: center;
+                background: linear-gradient(to bottom, #fff, #fffbf0);
+                position: relative;
+            }
+            .caja-oro::after {
+                content: "";
+                position: absolute;
+                top: 10px;
+                left: 10px;
+                right: 10px;
+                bottom: 10px;
+                border: 1px solid rgba(212, 175, 55, 0.2);
+                pointer-events: none;
+            }
+            .caja-oro h2 {
+                font-family: "Cinzel";
+                letter-spacing: 5px;
+                color: var(--oro);
+                font-size: 0.9rem;
+                margin-bottom: 10px;
+            }
+            .caja-oro h3 {
+                font-family: "Playfair Display";
+                font-size: 2.8rem;
+                margin: 0 0 20px 0;
+            }
+
+            .btn-negro-oro {
+                display: inline-block;
+                padding: 18px 45px;
+                background: var(--negro);
+                color: var(--oro);
+                text-decoration: none;
+                font-weight: 700;
+                letter-spacing: 2px;
+                border: 1px solid var(--oro);
+                transition: 0.4s;
+                text-transform: uppercase;
+            }
+            .btn-negro-oro:hover {
+                background: var(--oro);
+                color: var(--negro);
+                transform: translateY(-3px);
+            }
+
+            /* --- Newsletter Form --- */
+            .input-newsletter {
+                width: 100%;
+                max-width: 400px;
+                padding: 18px;
+                border: 1px solid var(--oro);
+                outline: none;
+                text-align: center;
+                margin-bottom: 20px;
+                font-family: "Poppins";
+            }
+
+            /* --- Footer & Contacto --- */
+            footer {
+                padding: 80px 10%;
+                background: var(--negro);
+                color: var(--blanco);
+                text-align: center;
+            }
+            .redes {
+                display: flex;
+                justify-content: center;
+                gap: 30px;
+                margin: 40px 0;
+            }
+            .redes a {
+                width: 60px;
+                height: 60px;
+                border: 1px solid var(--oro);
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: var(--oro);
+                font-size: 1.6rem;
+                text-decoration: none;
+                transition: 0.4s;
+            }
+            .redes a:hover {
+                background: var(--oro);
+                color: var(--negro);
+                transform: rotate(360deg) scale(1.1);
+            }
+
+            @media (max-width: 800px) {
+                .perfil-info h1 {
+                    font-size: 2.5rem;
+                }
+                .hero-fer {
+                    text-align: center;
+                    padding-top: 40px;
+                }
+                .caja-oro h3 {
+                    font-size: 2rem;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <div class="brand">Z-BIKES <span>MX</span></div>
+            <div class="brand" style="font-size: 0.7rem; opacity: 0.4">
+                FERNANDO ZAPOTECO
+            </div>
+        </header>
+
+        <main>
+            <section class="hero-fer animar">
+                <div class="perfil-foto">
+                    <img src="tu-foto.png" alt="Fernando Zapoteco" />
+                </div>
+                <div class="perfil-info">
+                    <h1>
+                        FERNANDO <br />
+                        <span style="color: var(--oro)">ZAPOTECO</span>
+                    </h1>
+                    <p class="slogan-prohibido">
+                        "En la escuela te prohibieron copiar, pero en la vida
+                        real para ser el mejor está permitido."
+                    </p>
+                    <p>
+                        Especialista en mecánica de la más alta gama. Con una
+                        trayectoria impecable forjada en los talleres más
+                        exigentes, Fernando ha perfeccionado su técnica a través
+                        de certificaciones en los Estados Unidos y una vida
+                        dedicada a la precisión absoluta. Si tu bicicleta es una
+                        obra de arte, merece ser atendida por un maestro.
+                    </p>
+                </div>
+            </section>
+
+            <section class="caja-oro animar">
+                <h2>ACADEMIA DE FORMACIÓN</h2>
+                <h3>"El Padre Que Nunca Tuve"</h3>
+                <p style="max-width: 650px; margin: 0 auto 30px">
+                    La disciplina y maestría que la educación tradicional no te
+                    dio. Aprende a dominar tu entorno y tu oficio con formación
+                    directa y sin filtros.
+                </p>
+                <a href="curso.html" class="btn-negro-oro">INICIAR FORMACIÓN</a>
+            </section>
+
+            <section class="caja-oro animar">
+                <img src="z.png" width="50" style="margin-bottom: 20px" />
+                <h2>ÚNETE A LA LOGIA</h2>
+                <p>Recibe estrategias de dominio personal en tu correo.</p>
+                <form
+                    action="https://app.moosend.com/subscribe/058d10f3-e0eb-4a68-9880-da696f226211"
+                    method="post"
+                    target="_blank"
+                >
+                    <input
+                        type="email"
+                        name="ms-email"
+                        placeholder="Tu mejor correo de contacto..."
+                        class="input-newsletter"
+                        required
+                    />
+                    <br />
+                    <button
+                        type="submit"
+                        class="btn-negro-oro"
+                        style="background: var(--oro); color: var(--negro)"
+                    >
+                        RECLAMAR ACCESO
+                    </button>
+                </form>
+            </section>
+        </main>
+
+        <footer>
+            <p
+                style="
+                    font-family: &quot;Cinzel&quot;;
+                    letter-spacing: 3px;
+                    color: var(--oro);
+                "
+            >
+                CONTACTO PRIVADO
+            </p>
+            <div class="redes">
+                <a
+                    href="https://www.instagram.com/fernando_zapoteco_gordillo?igsh=MWU0Yms2c3YwbGNwag=="
+                    target="_blank"
+                    ><i class="fab fa-instagram"></i
+                ></a>
+                <a href="https://wa.me/529631466941" target="_blank"
+                    ><i class="fab fa-whatsapp"></i
+                ></a>
+                <a href="https://t.me/+529631466941" target="_blank"
+                    ><i class="fab fa-telegram-plane"></i
+                ></a>
+            </div>
+            <p style="font-size: 0.7rem; opacity: 0.4; letter-spacing: 2px">
+                &copy; 2026 FERNANDO ZAPOTECO GORDILLO. <br />
+                MAESTRÍA Y DISCIPLINA.
+            </p>
+        </footer>
+    </body>
+</html>
